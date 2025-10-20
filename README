@@ -1,0 +1,32 @@
+Transfer Learning for ECG Classification Using ResNet
+
+This repository contains both the report and code for a project on ECG image classification using transfer learning with a pre-trained ResNet model. Two approaches were explored:
+
+Fixed Feature Extractor – ResNet layers frozen, only the final layer trained.
+
+Fine-Tuning – Entire model trained for ECG-specific adaptation.
+
+📊 Results
+
+Fixed Feature Extractor: 66.6% accuracy (F1 = 0.666)
+
+Fine-Tuning: 73.5% accuracy (F1 = 0.735)
+Fine-tuning provided better feature adaptation but required more computation.
+
+⚙️ Methods
+
+Model: Pre-trained ResNet
+
+Optimizer: Adam (lr = 0.001)
+
+Loss: Cross-Entropy
+
+Epochs: 5
+
+Dataset: 65,600 training and 18,136 testing ECG images (balanced classes)
+
+📁 Repository Contents
+
+report.pdf – includes all results, plots, and analysis.
+
+transfer_learning.ipynb – contains full training and evaluation code.
